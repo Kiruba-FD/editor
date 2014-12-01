@@ -1,0 +1,14 @@
+<% content_for :for_head do %>
+  <%= javascript_include_tag 'ckeditor/ckeditor' %>
+  
+  <script type="text/javascript">
+	var FD_EDITOR;
+	$(function(){
+		FD_EDITOR = CKEDITOR.replace( 'editor1' );
+	});
+  </script>
+<% end %>
+
+<textarea name="editor1" id="editor1" >
+    This is my textarea to be replaced with CKEditor.
+</textarea>

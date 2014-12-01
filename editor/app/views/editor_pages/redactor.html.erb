@@ -1,0 +1,12 @@
+<% content_for :for_head do %>
+  <%= javascript_include_tag 'redactor/redactor' %>
+  <link rel="stylesheet" href="/javascripts/redactor/css/redactor.css" />
+  <script type="text/javascript">
+	var FD_EDITOR;
+	$(function(){
+		FD_EDITOR = $('#content').redactor();
+	});
+  </script>
+<% end %>
+
+<textarea id="content" name="content"></textarea>

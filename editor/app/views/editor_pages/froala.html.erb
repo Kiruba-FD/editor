@@ -1,0 +1,18 @@
+<% content_for :for_head do %>
+
+ 	<link href="/javascripts/froala/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+ 	<link href="/javascripts/froala/css/froala_editor.min.css" rel="stylesheet" type="text/css" />
+  	<link href="/javascripts/froala/css/froala_style.min.css" rel="stylesheet" type="text/css" />
+
+  	<%= javascript_include_tag 'froala/js/froala_editor.min.js' %>
+  
+  	<script type="text/javascript">
+		var FD_EDITOR;
+		$(function(){
+			FD_EDITOR = $('#edit').editable({inlineMode: false});
+		});
+  	</script>
+<% end %>
+
+<textarea id="edit" name="content"></textarea>

@@ -1,0 +1,18 @@
+<% content_for :for_head do %>
+  <%= javascript_include_tag 'aloha.min' %>
+  
+  <script type="text/javascript">
+	var FD_EDITOR;
+	$(function(){
+		var editable = document.querySelector('.aloha-editable');
+		FD_EDITOR = aloha(editable);
+	});
+  </script>
+<% end %>
+
+<div class="aloha-editable">
+	<h2>This content will be editable...</h2>
+	<p>
+		if you press the 
+	</p>
+</div>
